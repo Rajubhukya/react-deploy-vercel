@@ -1,542 +1,501 @@
-<<<<<<< HEAD
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Gilroy';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
 }
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-  background-color: #FFFF;
+    background-color: #FFFF;
 }
 
 #page1 {
-  height: 120%;
-  width: 100%;
-  /* background-color: red; */
+    height: 120%;
+    width: 100%;
+    /* background-color: red; */
 }
 
 #nav {
-  height: 100px;
-  width: 100%;
-  /* background-color: aqua; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
 }
 
 #nav-part1 {
-  width: 31%;
-  /* background-color: yellow; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 13px;
+    width: 31%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13px;
 }
 
 #nav-part1 h4 {
-  font-size: 13px;
-  font-weight: 530;
+    font-size: 13px;
+    font-weight: 530;
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: rgb(14, 12, 12);
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(14, 12, 12);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: rgb(242, 241, 241);
+    background-color: rgb(242, 241, 241);
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .search {
-  --padding: 14px;
-  width: max-content;
-  display: flex;
-  align-items: right;
-  padding: var(--padding);
-  border-radius: 28px;
-  background: #f3f4f4;
-  transition: background 0.25s;
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: right;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: #f3f4f4;
+    transition: background 0.25s;
 }
 
 .search:focus-within {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
 }
 
 .search-input {
-  font-size: 16px;
-  font-family: 'lexend', sans-serif;
-  color: #333333;
-  margin-left: var(--padding);
-  outline: none;
-  border: none;
-  background: transparent;
+    font-size: 16px;
+    font-family: 'lexend', sans-serif;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
 }
 
 #nav-part2 {
-  width: 30%;
-  /* background-color: yellow; */
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 2px;
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2px;
 }
 
 #nav-part2 button {
-  padding: 15px 19px;
-  border: none;
-  background-color: #000;
-  color: white;
-  border-radius: 50px;
-  font-size: 13px;
-  font-weight: 600;
+    padding: 15px 19px;
+    border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 #nav-part2 button:first-child {
-  color: #000;
-  background-color: rgb(250, 246, 246);
+    color: #000;
+    background-color: rgb(250, 246, 246);
 }
 
 #nav img {
-  height: 60px;
+    height: 60px;
 }
 
 #content {
-  height: calc(120% - 100px);
-  width: 100%;
-  /* background-color: rgb(29, 82, 129); */
-  display: flex;
-  /* justify-content: center; */
-  flex-direction: column;
-  align-items: center;
-  padding-top: 70px;
+    height: calc(120% - 100px);
+    width: 100%;
+    /* background-color: rgb(29, 82, 129); */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
 }
 
 #content h3 {
-  background-color: #F2B0EA;
-  padding: 8px 15px;
-  font-weight: 501;
-  font-size: 15px;
-  border-radius: 50px;
-  /* text-align: center; */
+    background-color: #F2B0EA;
+    padding: 8px 15px;
+    font-weight: 501;
+    font-size: 15px;
+    border-radius: 50px;
+    /* text-align: center; */
 }
 
 #content h1 {
-  text-align: center;
-  font-size: 70px;
-  font-weight: 501;
-  margin: 19px;
-  font-family: "Source Serif 4";
-  line-height: 70px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 501;
+    margin: 19px;
+    font-family: "Source Serif 4";
+    line-height: 70px;
 }
 
 #content h4 {
-  font-weight: 501;
-  font-size: 17px;
+    font-weight: 501;
+    font-size: 17px;
 }
 
 #content>button {
-  padding: 15px 19px;
-  border: none;
-  background-color: #000;
-  color: white;
-  border-radius: 50px;
-  font-size: 13px;
-  font-weight: 600;
-  margin: 38px 0;
+    padding: 15px 19px;
+    border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 38px 0;
 }
 
 #bottom {
-  height: 380px;
-  padding: 5px;
-  width: 100%;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  gap: 30px;
+    height: 380px;
+    padding: 5px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 30px;
 }
 
 @keyframes anime {
-  from {
-      left: 0;
-  }
-  to {
-      left: -70%;
-  }
+    from {
+        left: 0;
+    }
+    to {
+        left: -70%;
+    }
 }
 
 #bottom::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .elem {
-  height: 85%;
-  display: inline-block;
-  animation-name: anime;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  width: 250px;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  /* border: 2px solid black; */
-  border-radius: 40px;
-  overflow: hidden;
-  margin-right: 30px;
-  position: relative;
+    height: 85%;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    width: 250px;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* border: 2px solid black; */
+    border-radius: 40px;
+    overflow: hidden;
+    margin-right: 30px;
+    position: relative;
 }
 
 .elem img,
 video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 
 /* .elem video{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center ;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center ;
 } */
 
 #content #bottom .elem .text-bottom1 {
-  position: absolute;
-  bottom: -15px;
-  height: 40%;
-  width: 100%;
-  color: white;
-  padding: 20px;
-  background-color: transparent;
+    position: absolute;
+    bottom: -15px;
+    height: 40%;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    background-color: transparent;
 }
 
 #content #bottom .elem .text-bottom1 h4 {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 #content #bottom .elem .text-bottom1 button {
-  padding: 10px 15px;
-  border: 1px solid white;
-  margin: 10px 0;
-  background-color: transparent;
-  color: white;
-  border-radius: 50px;
-  font-size: 12px;
-  font-weight: 501;
+    padding: 10px 15px;
+    border: 1px solid white;
+    margin: 10px 0;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 501;
 }
 
 #page2 {
-  height: 235%;
-  width: 100%;
-  /* background-color: blue; */
-  position: relative;
-  margin-top: 5%;
-  padding: 40px;
-  padding-top: 95px;
+    height: 235%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+    margin-top: 5%;
+    padding: 40px;
+    padding-top: 95px;
 }
 
 #page2 button {
-  position: absolute;
-  bottom: 5%;
-  padding: 18px 23px;
-  font-size: 14px;
-  font-weight: 501;
-  border-radius: 50px;
-  border: 1px solid black;
-  left: 42%;
+    position: absolute;
+    bottom: 5%;
+    padding: 18px 23px;
+    font-size: 14px;
+    font-weight: 501;
+    border-radius: 50px;
+    border: 1px solid black;
+    left: 42%;
 }
 
 .box {
-  height: 270px;
-  width: 290px;
-  /* background-color: red; */
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 10px;
-  position: relative;
-  display: inline-block;
-  transition: all ease 0.3s;
+    height: 270px;
+    width: 290px;
+    /* background-color: red; */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    transition: all ease 0.3s;
 }
 
 #page2 h1 {
-  text-align: center;
-  font-size: 48px;
-  font-weight: 500;
-  margin-bottom: 50px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 50px;
 }
 
 .box img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .box-bottom {
-  height: 40%;
-  width: 100%;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.514));
-  position: absolute;
-  transition: all ease 0.3s;
-  bottom: -40%;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  padding-top: 40px;
-  align-items: center;
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.514));
+    position: absolute;
+    transition: all ease 0.3s;
+    bottom: -40%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-top: 40px;
+    align-items: center;
 }
 
 .box-bottom i {
-  background-color: white;
-  color: #000;
-  border-radius: 50%;
-  font-size: 18px;
-  padding: 8px 9px;
+    background-color: white;
+    color: #000;
+    border-radius: 50%;
+    font-size: 18px;
+    padding: 8px 9px;
 }
 
 
 /* .liketoggle:checked+.box-bottom .ri-heart-3-line {
-  display: none;
+    display: none;
 }
 
 .liketoggle:checked+.box-bottom .ri-heart-fill {
-  display: inline-block;
+    display: inline-block;
 } */
 
 .box-bottom h5 {
-  font-size: 18px;
-  padding: 8px 9px;
+    font-size: 18px;
+    padding: 8px 9px;
 }
 
 .box:hover .box-bottom {
-  bottom: 0;
-  transition: all ease 0.3s;
+    bottom: 0;
+    transition: all ease 0.3s;
 }
 
 .box:hover {
-  box-shadow: 10px 10px 20px black;
+    box-shadow: 10px 10px 20px black;
 }
 
 #page3 {
-  height: 90%;
-  width: 100%;
-  background-color: #FFDA79;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  gap: 35px;
+    height: 90%;
+    width: 100%;
+    background-color: #FFDA79;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 35px;
 }
 
 #page3 h1 {
-  font-size: 70px;
-  font-weight: 501;
-  font-family: "Source Serif 4";
-  line-height: 65px;
+    font-size: 70px;
+    font-weight: 501;
+    font-family: "Source Serif 4";
+    line-height: 65px;
 }
 
 #page3 h6 {
-  font-size: 18px;
-  line-height: 35px;
-  font-weight: 501;
-  /* font-family: "Source Serif 4"; */
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 501;
+    /* font-family: "Source Serif 4"; */
 }
 
 #page3 h5 {
-  font-size: 18px;
-  line-height: 35px;
-  font-weight: 501;
-  position: relative;
-  /* font-family: "Source Serif 4"; */
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 501;
+    position: relative;
+    /* font-family: "Source Serif 4"; */
 }
 
 .page3-button {
-  display: flex;
-  gap: 14px;
+    display: flex;
+    gap: 14px;
 }
 
 .page3-button button {
-  padding: 19px 21px;
-  border-radius: 50px;
-  border: none;
-  font-size: 13px;
-  font-weight: 600;
+    padding: 19px 21px;
+    border-radius: 50px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .page3-button button:nth-child(1) {
-  background-color: #000;
-  color: white;
+    background-color: #000;
+    color: white;
 }
 
 .page3-button button:nth-child(2) {
-  background-color: white;
-  color: #000;
+    background-color: white;
+    color: #000;
 }
 
 border::after {
-  content: "";
-  height: 1px;
-  position: absolute;
-  width: 40%;
-  bottom: 28%;
-  right: 0;
-  background-color: #000;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 40%;
+    bottom: 28%;
+    right: 0;
+    background-color: #000;
 }
 
 #page4 {
-  height: 80%;
-  width: 100%;
-  /* background-color: red; */
-  position: relative;
+    height: 80%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
 }
 
 #page4-top {
-  height: 50%;
-  width: 100%;
-  /* display: inline-block; */
-  position: relative;
-  background-color: white;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  /* display: flex; */
+    height: 50%;
+    width: 100%;
+    /* display: inline-block; */
+    position: relative;
+    background-color: white;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* display: flex; */
 }
 
 .box-elem {
-  height: 85%;
-  width: 220px;
-  display: inline-block;
-  animation-name: animation;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  /* animation-fill-mode: forwards; */
-  overflow: hidden;
-  position: relative;
+    height: 85%;
+    width: 220px;
+    display: inline-block;
+    animation-name: animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-fill-mode: forwards; */
+    overflow: hidden;
+    position: relative;
 }
 
 .page4-box:hover {
-  animation: none;
+    animation: none;
 }
 
 @keyframes animation {
-  from {
-      left: 0;
-  }
-  to {
-      left: -70%;
-  }
+    from {
+        left: 0;
+    }
+    to {
+        left: -70%;
+    }
 }
 
 #page4-top::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .box-elem img {
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-  /* overflow: hidden; */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    /* overflow: hidden; */
 }
 
 .page4-box {
-  width: 50%;
-  position: absolute;
-  bottom: 0;
-  display: inline-block;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
 }
 
 
 /* #page4-nav{
-  height: 50%;
-  width: 100%;
-  background-color: red;
+    height: 50%;
+    width: 100%;
+    background-color: red;
 } */
-=======
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
->>>>>>> 2105f5430eac906aa79d660aaaca61830e00d31e
