@@ -11,26 +11,25 @@ function App() {
             <div id="nav-part1">
               <h4>
                 <div className="dropdown">
-                  <button className="dropbtn">Dropdown 
+                  <button className="dropbtn">Find designers 
                     <i className="fa fa-caret-down" />
                   </button>
                   <div className="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a href="#">Designer search</a>
+                    <a href="#">Post a job</a>
                   </div>
                 </div>
               </h4>
               <h4>Inspiration</h4>
               <h4>
                 <div className="dropdown">
-                  <button className="dropbtn">Dropdown 
+                  <button className="dropbtn">Courses 
                     <i className="fa fa-caret-down" />
                   </button>
                   <div className="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a href="#">UX Diploma</a>
+                    <a href="#">UI Certificate</a>
+                    <a href="#">Live interactive workshops</a>
                   </div>
                 </div></h4>
               <h4>Jobs</h4>
@@ -124,6 +123,25 @@ function App() {
         </div>
         <div id="page2">
           <h1>Explore inspiring designs</h1>
+          <div id="nav1">
+            <div><h4>Popular
+                </h4>
+              </div>
+            <div id="nav1-part1">
+              <h3>ALL</h3>
+              <h4> Animation</h4>
+              <h4>Branding</h4>
+              <h4>Illustration</h4>
+              <h4>Mobile</h4>
+              <h4>Print</h4>
+              <h4>Product Design</h4>
+              <h4>Typography</h4>
+              <h4>Web Design</h4>
+            </div>
+            <div id="nav1-part2">
+              <h3>Filters</h3>
+            </div>
+          </div>
           <div className="box">
             <img src="https://cdn.dribbble.com/userupload/12654993/file/original-35023e0f6547509ed29dcce92115ccc3.png?crop=91x83-1505x1143&resize=400x300&vertical=center" alt="" />
             <div className="box-bottom">
