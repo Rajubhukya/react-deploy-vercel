@@ -254,7 +254,7 @@ function App() {
               <i className="ri-heart-3-line" onclick="toggleLike(this)" />
             </div>
           </div>
-          <button>Browse more inspiration</button>
+          <button>Browse more inspirations</button>
         </div>
         <div id="page3">
           <h1>Find your next <br /> designer today</h1>
