@@ -11,7 +11,7 @@ function App() {
             <div id="nav-part1">
               <h4>
                 <div className="dropdown">
-                  <button className="dropbtn">Find designers 
+                  <button className="dropbtn">Find designe 
                     <i className="fa fa-caret-down" />
                   </button>
                   <div className="dropdown-content">
