@@ -11,11 +11,11 @@ function App() {
             <div id="nav-part1">
               <h4>
                 <div className="dropdown">
-                  <button className="dropbtn">Find designer 
+                  <button className="dropbtn">Find designers 
                     <i className="fa fa-caret-down" />
                   </button>
                   <div className="dropdown-content">
-                    <a href="#">Designer search</a>
+                    <a href="#">Designer searchs</a>
                     <a href="#">Post a job</a>
                   </div>
                 </div>
