@@ -300,7 +300,7 @@ function App() {
               </div>
               <div className="box-elem">
                 <img src="https://cdn.dribbble.com/userupload/12667221/file/original-0d6b9a090adc056324aad947cf935774.png?format=webp&resize=200x150&vertical=center" alt="" />
-                <h4>hey hellow</h4>
+                <h4>hey hellows</h4>
               </div>
             </div>
           </div>
