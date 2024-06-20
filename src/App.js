@@ -17,6 +17,7 @@ function App() {
                   <div className="dropdown-content">
                     <a href="#">Designer searchs</a>
                     <a href="#">Post a job</a>
+                    <a href="#">welcome</a>
                   </div>
                 </div>
               </h4>
